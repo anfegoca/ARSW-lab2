@@ -8,37 +8,13 @@ import java.util.List;
  * @author Andres Gonzalez
  */
 public class Calculator {
-    
-    /**
-     * Calcula la media dada una lista de Doubles
-     * @param lis lista de Doubles
-     * @return el valor de la media como tipo Double
-     */
-    public Double mean(List<Double> lis ){
-        Double sum=0.0;
-        for(int i=0;i<lis.size();i++){
-            sum+=lis.get(i);
-        }
-        Double ans = sum/lis.size();
-        return ans;
-    } 
-    
-    /**
-     * Calcula la desviación estandar de la lista dada
-     * @param lis lista de Doubles
-     * @return el valor de la desviación estandar como tipo Double
-     */
-    public Double standardDesviation(List<Double> lis){
-        Double avr=mean(lis);
-        Double sum=0.0;
-        for(int i=0;i<lis.size();i++){
-            sum+=Math.pow(lis.get(i)-avr,2);
-        }
-        Double res=Math.sqrt(sum/(lis.size()-1));
-        return res;
+    interface Operations {
+        Double operation(List<Double> lis);
     }
-    
-    
+    public Double operate(List<Double> lis, Operations op) {
+        return op.operation(lis);
+    }
+  
     public static void main(String[] args){
         if(args.length!=1){
             System.out.println("incorrect arguments.");
@@ -47,11 +23,38 @@ public class Calculator {
             Calculator cal = new Calculator();
             List l = r.readinList(r.read(args[0]));
             
-            Double m = cal.mean(l);
-            Double d = cal.standardDesviation(l);
+            /**
+            * Calcula la media dada una lista de Doubles
+            * @param lis lista de Doubles
+            * @return el valor de la media como tipo Double
+            */
+            Operations mean = (lis) -> 
+            {
+                Double sum=0.0;
+                for (Double li : lis) {
+                    sum += li;
+                }
+                sum=sum/lis.size();
+                return sum;
+            };
+            /**
+            * Calcula la desviación estandar de la lista dada
+            * @param lis lista de Doubles
+            * @return el valor de la desviación estandar como tipo Double
+            */
+            Operations standarDes = (List<Double> lis) ->
+            {
+                Double sum=0.0;
+                Double avr=cal.operate(l,mean);
+                for (Double li : lis) {
+                    sum += Math.pow(li-avr,2);
+                }
+                sum=Math.sqrt(sum/(lis.size()-1));
+                return sum;
+            };
             
-            System.out.println("Mean = "+m);
-            System.out.println("Standard Desviation = "+d);
+            System.out.println("Mean = "+(cal.operate(l,mean)));
+            System.out.println("Standard Desviation = "+(cal.operate(l, standarDes)));
         }
     }
 }
