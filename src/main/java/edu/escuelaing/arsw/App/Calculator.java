@@ -31,8 +31,8 @@ public class Calculator {
             Operations mean = (lis) -> 
             {
                 Double sum=0.0;
-                for (Double li : lis) {
-                    sum += li;
+                for (int i=0;i<lis.size();i++){
+                    sum += lis.get(i);
                 }
                 sum=sum/lis.size();
                 return sum;
@@ -46,8 +46,8 @@ public class Calculator {
             {
                 Double sum=0.0;
                 Double avr=cal.operate(l,mean);
-                for (Double li : lis) {
-                    sum += Math.pow(li-avr,2);
+                for (int i=0;i<lis.size();i++) {
+                    sum += Math.pow(lis.get(i)-avr,2);
                 }
                 sum=Math.sqrt(sum/(lis.size()-1));
                 return sum;

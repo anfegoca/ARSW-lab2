@@ -3,7 +3,6 @@ package edu.escuelaing.arsw;
 
 import edu.escuelaing.arsw.App.Calculator;
 import edu.escuelaing.arsw.model.Reader;
-import java.util.List;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
@@ -29,7 +28,6 @@ public class CalculatorTest
             Calculator.main(args);
             assertTrue(true);
         }catch(Exception e){
-            System.out.println(e);
             assertTrue(false);
         }
     }

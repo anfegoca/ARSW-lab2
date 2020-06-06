@@ -42,27 +42,27 @@ public class MyLinkedList<E> implements List<E>{
 
     @Override
     public boolean isEmpty() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported isEmpty."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean contains(Object o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported contains."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public Iterator<E> iterator() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported iterator."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public Object[] toArray() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported toArray."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public <T> T[] toArray(T[] a) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported toArray."); //To change body of generated methods, choose Tools | Templates.
     }
     /**
      * Addiciona el elemento dado al final de la lista
@@ -86,37 +86,37 @@ public class MyLinkedList<E> implements List<E>{
 
     @Override
     public boolean remove(Object o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported remove."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported containsAll."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported addAll."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported addAll."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported removeAll."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported retainAll."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported clear."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -139,12 +139,12 @@ public class MyLinkedList<E> implements List<E>{
 
     @Override
     public E set(int index, E element) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported set."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void add(int index, E element) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported add."); //To change body of generated methods, choose Tools | Templates.
 
         
     }
@@ -164,33 +164,33 @@ public class MyLinkedList<E> implements List<E>{
             x.next.prev=y;
         }
                 */
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported remove."); //To change body of generated methods, choose Tools | Templates.
 
     }
 
     @Override
     public int indexOf(Object o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported indexOf."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public int lastIndexOf(Object o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported lastIndexOf."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public ListIterator<E> listIterator() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported listIterator."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public ListIterator<E> listIterator(int index) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported listIterator."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public List<E> subList(int fromIndex, int toIndex) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported subList."); //To change body of generated methods, choose Tools | Templates.
     }
 
 
